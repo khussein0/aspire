@@ -1,0 +1,23 @@
+<div class="flex flex-column gap-2 py-3">
+  <label htmlFor="cardHolderName">Card Holder Name</label>
+  <input
+    class="uppercase"
+    id="cardHolderName"
+    [ngClass]="{ 'ng-invalid ng-dirty': haveSpecialCharacter || invalidLength }"
+    pInputText
+    type="text"
+    [(ngModel)]="cardHolderName"
+  />
+  <small class="text-red-500" *ngIf="invalidLength"
+    >Input should be 0-50 characters.</small
+  >
+  <small class="text-red-500" *ngIf="haveSpecialCharacter">
+    Input should be contains only valid alphabet characters.
+  </small>
+</div>
+
+<div class="flex justify-content-end">
+  <button class="p-button-primary" pButton pRipple (click)="onSubmit()">
+    OK
+  </button>
+</div>

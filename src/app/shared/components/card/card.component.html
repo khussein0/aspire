@@ -1,0 +1,31 @@
+<div class="card-container">
+  <div class="card-header flex justify-content-end">
+    <img
+      class="icon-aspire"
+      alt="Aspire logo"
+      src="/assets/icons/aspire-logo-white.svg"
+    />
+  </div>
+  <div class="card-body">
+    <h2 class="card-holder-name uppercase">{{ cardData.cardHolderName }}</h2>
+    <div class="card-number">
+      <span>{{ cardData.cardNumber | cardMask : cardData.isHideInfo }}</span>
+    </div>
+    <div class="card-info flex align-items-center gap-2">
+      <span class="card-expiration"> Thur: {{ cardData.expirationDate }} </span>
+      <span class="card-cvv flex align-items-center">
+        CVV:
+        <ng-container *ngIf="!cardData.isHideInfo; else hideCvv">
+          {{ cardData.cvvNumber }}
+        </ng-container>
+      </span>
+    </div>
+  </div>
+  <div class="card-footer flex justify-content-end">
+    <img class="icon-visa" alt="Visa Logo" src="/assets/icons/visa-logo.svg" />
+  </div>
+</div>
+
+<ng-template #hideCvv>
+  <span class="hide-data">***</span>
+</ng-template>

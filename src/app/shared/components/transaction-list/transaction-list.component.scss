@@ -1,0 +1,88 @@
+.transaction-list {
+  z-index: 2;
+  position: relative;
+  background-color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  .transaction-item {
+    .transaction-item-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      &.blue {
+        background-color: #009dff1a;
+      }
+      &.green {
+        background-color: #00d6b51a;
+      }
+      &.pink {
+        background-color: #f251951a;
+      }
+    }
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #f0f0f0;
+    }
+  }
+
+  .transaction-info {
+    display: flex;
+  }
+
+  .transaction-title {
+    margin: 0;
+    font-size: var(--font-size-md);
+    color: var(--text-dark);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 160px;
+  }
+  .transaction-time {
+    font-size: var(--font-size-sm);
+    color: #aaaaaa;
+  }
+
+  .transaction-action {
+    .transaction-action-icon {
+      width: 24px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: var(--aspire-dark-blue);
+    }
+    .transaction-action-detail {
+      color: var(--aspire-dark-blue);
+      font-size: var(--font-size-xs);
+      font-weight: bold;
+    }
+  }
+
+  .transaction-change {
+    font-size: var(--font-size-md);
+    font-weight: bold;
+    &.credit {
+      color: var(--aspire-green);
+    }
+  }
+}
+
+.transaction-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #edfff5;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index: 1;
+  margin-top: -2px;
+  position: relative;
+}
+.transaction-link {
+  color: #01d167;
+  font-weight: bold;
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+}

@@ -1,0 +1,41 @@
+:host {
+    display: flex;
+    min-height: 100vh;
+    padding-bottom: 4rem;
+}
+  
+.router-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+  
+@media (min-width: 992px) {
+    :host {
+      padding-bottom: 0;
+    }
+    .router-container {
+      width: calc(100vw - var(--aside-nav-with));
+      padding: 0 1rem;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .router-container {
+      padding: 0 2rem;
+    }
+}
+  
+@media (min-width: 1366px) {
+    .router-container {
+      padding: 0 3.5rem;
+    }
+}
+  
+@media (min-width: 1600px) {
+    .router-container {
+      padding: 0 3.5rem;
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+}

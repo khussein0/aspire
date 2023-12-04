@@ -1,0 +1,29 @@
+.button {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: transparent;
+  padding: 8px 12px;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.aspire-button {
+  color: var(--aspire-blue);
+  font-size: var(--font-size-sm);
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.aspire-button-action {
+  font-weight: normal;
+  flex-direction: column;
+  color: var(--text-color);
+  font-size: var(--font-size-sm);
+  padding: 0;
+  max-width: 70px;
+}

@@ -1,0 +1,51 @@
+:host {
+  display: block;
+}
+
+.card-container {
+  background-color: var(--aspire-green);
+  border-radius: var(--border-radius);
+  color: var(--text-light);
+  padding: 1.5rem;
+  min-height: 220px;
+  font-weight: bold;
+
+  .card-header {
+    margin-bottom: 24px;
+  }
+
+  .card-holder-name {
+    font-size: var(--font-size-xl);
+    margin-bottom: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+  }
+
+  .card-info {
+    line-height: 2rem;
+  }
+
+  .card-number {
+    font-size: var(--font-size-md);
+    letter-spacing: 3px;
+    white-space: pre;
+  }
+
+  .card-expiration,
+  .card-cvv {
+    line-height: 2rem;
+  }
+
+  .hide-data {
+    margin-left: 0.5rem;
+  }
+
+  .icon-aspire {
+    height: 21px;
+  }
+  .icon-visa {
+    height: 21px;
+  }
+}

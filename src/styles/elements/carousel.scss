@@ -1,0 +1,28 @@
+.p-carousel {
+  .p-carousel-indicators {
+    .p-carousel-indicator {
+      margin-bottom: 0;
+      button {
+        background-color: var(--aspire-green);
+        opacity: 0.1;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+      }
+      &.p-highlight {
+        button {
+          opacity: 1;
+          width: 16px;
+        }
+      }
+    }
+  }
+}
+
+p-carousel {
+  &.is-frozen {
+    .p-carousel-items-content {
+      filter: blur(4px);
+    }
+  }
+}

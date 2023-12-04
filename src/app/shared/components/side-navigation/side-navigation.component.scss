@@ -1,0 +1,37 @@
+.aside-navigation {
+  width: 340px;
+  height: 100%;
+  background-color: var(--aspire-bg-dark);
+  color: var(--aspire-white);
+  padding: 3rem;
+  display: none;
+
+  .aside-navigation-logo {
+    width: 125px;
+  }
+  .intro {
+    font-size: var(--font-size-lg);
+    opacity: 0.3;
+  }
+  .aside-navigation-list {
+    display: flex;
+    flex-direction: column;
+    .aside-navigation-item {
+      display: block;
+      padding: 2.5rem 0;
+    }
+    .aside-navigation-link {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .aside-navigation {
+    display: flex;
+    flex-direction: column;
+  }
+}

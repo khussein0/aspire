@@ -1,0 +1,52 @@
+@import "./elements/accordion.scss";
+@import "./elements/button.scss";
+@import "./elements/carousel.scss";
+@import "./elements/dialog.scss";
+@import "./elements/tab-view.scss";
+
+:root {
+  --aspire-green: #01d167;
+  --aspire-white: #fff;
+  --aspire-blue: #23cefd;
+  --aspire-light-blue: #edf3ff;
+  --aspire-dark-blue: #325baf;
+  --aspire-bg-light: #fff;
+  --aspire-bg-dark: #0c365a;
+  --aspire-bg-element: var(--aspire-light-blue);
+
+  --text-light: #fff;
+  --text-dark: #222222;
+  --text-color: #0c365a;
+  --border-radius-tab: 12px;
+  --border-radius-element: 16px;
+
+  --font-size-xxs: 0.5625rem; // 9px
+  --font-size-xs: 0.75rem; // 12px
+  --font-size-sm: 0.8125rem; // 13px
+  --font-size-md: 0.875rem; // 14px
+  --font-size-lg: 0.9375rem; // 15px
+  --font-size-default: 1rem; // 16px
+  --font-size-xl: 1.375rem; // 22px
+  --font-size-xxl: 1.5rem; // 24px
+  --font-size-xxxl: 1.625rem; // 26px
+
+  --menu-index: 100;
+
+  --aside-nav-width-sm: 280px;
+  --aside-nav-width: 340px;
+}
+
+/* You can add global styles to this file, and also import other style files */
+:root {
+  font-family: "Open Sans", sans-serif;
+  --font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-inline-start: 0;
+}

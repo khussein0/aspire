@@ -1,0 +1,11 @@
+.p-dialog-footer {
+  .p-button {
+    border: none;
+    .p-button-icon-left {
+      display: none;
+    }
+    &.p-confirm-dialog-accept {
+      background-color: var(--aspire-green);
+    }
+  }
+}
